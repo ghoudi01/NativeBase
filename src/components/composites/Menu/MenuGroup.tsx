@@ -17,9 +17,9 @@ const MenuGroup = (
   }
   return (
     <>
-      <Box {...resolvedProps} ref={ref}>
-        <Text {..._title}>{title}</Text>
-      </Box>
+      {title&&  <Box {...resolvedProps} ref={ref}>
+       <Text {..._title}>{title}</Text>
+      </Box>}
       {children}
     </>
   );
